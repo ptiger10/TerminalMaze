@@ -126,7 +126,11 @@ To execute a Bash script, just type *.* followed by the name of the script into 
 $ . executeMe.sh
 
 Now you are ready to execute a Python script. Python scripts end in .py 
-To execute one, use the python command:
+We are a Python 3 family around here (by default, MacOS still ships with Python 2)
+To override the default python interpreter, install Python 3 then use the 'alias' command (alias)
+$ alias python=python3
+
+To execute a python script, use the python command:
 $ python theTreasure.py
 
 Now that you've learned a valuable lesson about trust, type $ cat seven_shortcuts.txt
@@ -164,23 +168,18 @@ for i in `seq 1 30`;
         mkdir -p ~/theMaze/route$i
     done   
 
-printf """#!/usr/bin/python 
+printf """
 import webbrowser
 webbrowser.open('https://www.youtube.com/watch?v=xfr64zoBTAQ')""" > theTreasure.py
 
 printf "#!/bin/bash/
 echo You just executed this script!" > executeMe.sh
 
-printf """#!/usr/bin/python 
+printf """ 
 import webbrowser
 webbrowser.open('https://www.youtube.com/watch?v=6-HUgzYPm9g')""" > route1/theRealTreasure.py
 
-# printf """Down which route is the real real treasure hidden? I'll never tell. 
-# But my buddy the Python interpreter might know. 
-# Just ask him about 1050 modulus 41 and add 3""" > route1/.clue.txt
-
 printf """
-#!/usr/bin/python 
 print('Clue: my password is the same as the name of the SHELL environment variable')
 condition = False
 while condition == False:
@@ -196,7 +195,7 @@ while condition == False:
         print('Try that one again')
 """ > route1/.executeThisClue.py
 
-printf """#!/usr/bin/python 
+printf """
 import webbrowser
 webbrowser.open('https://www.youtube.com/watch?v=4fW3tX-UinQ')""" > route28/.theRealRealTreasure.py
 

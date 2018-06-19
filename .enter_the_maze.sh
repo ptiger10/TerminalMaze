@@ -33,7 +33,7 @@ You can also combine parameters, e.g., $ ls -al
 
 When you are ready to move on, type $ cat three_cat.txt
 --------------------------------------------------------------------------------
-""" > ~/theMaze/two_cat.txt
+""" > ~/theMaze/two_ls.txt
 
 printf """
 --------------------------------------------------------------------------------
@@ -153,7 +153,7 @@ Some pro tips for mastering Terminal:
 - An alternative to executing a Python script is to use the interactive Python interpreter within a Terminal shell: 
     $ python
     You can use this to test out functions or for quick math computations
-    For example, you can do a modulus calculation (i.e., calculate the remainder after division) with x <percent symbol> y
+    For example, you can do a modulus calculation (i.e., calculate the remainder after division) with 5 <percent symbol> 3
     To return to Terminal shell from the interactive Python shell, type Ctrl + d
 
 You are now ready to start searching the Maze. Start by cd'ing into route1, perhaps?

@@ -84,7 +84,7 @@ To return text in Terminal, use the 'echo' command (echo).
 $ echo Hello World!
 
 You can use Terminal to set variable values, and echo to return those value.
-$ var='Hello World'
+$ var='Hello World' OR $ export var='Hello World'
 ^^ NB: Never put spaces on either side of the = sign when declaring a variable in Bash ^^
 
 $ echo \$var
@@ -97,14 +97,15 @@ A very important environment variable is the PATH variable
 Your PATH is the list of directories (separated by colons) that the computer checks for an executable file whenever it receives a Terminal command.
 $ echo \$PATH
 
-For example, when you type 'echo' into Terminal, it searches all the directories in the path.
+For example, when you type 'echo' into Terminal, it searches all the directories in the PATH.
 Once it finds an executable file called 'echo' in the '/bin' directory, it executes that file.
 
 See for yourself:
 $ which echo
-^^ The which command shows where on the PATH the computer is currently finding a command. ^^ 
+^^ The which command shows where on the PATH the computer is currently finding the echo command. ^^ 
 $ ls -l /bin
-To isolate a single file, use the 'get regular expression' command (grep): $ ls -l /bin | grep 'echo'
+This code returns a list of all executable files in the /bin directory.
+To isolate a single file here, use the 'get regular expression' command (grep): $ ls -l /bin | grep 'echo'
 ^^ NB: In the code above, the | character is a 'pipe' between the two commands. 
 A pipe takes the output of the first command and uses it as the input of the second ^^
 
@@ -177,7 +178,10 @@ echo You just executed this script!" > executeMe.sh
 
 printf """ 
 import webbrowser
-webbrowser.open('https://www.youtube.com/watch?v=6-HUgzYPm9g')""" > route1/theRealTreasure.py
+import time
+webbrowser.open('https://www.youtube.com/watch?v=6-HUgzYPm9g')
+time.sleep(5)
+print('Was that it? Or is there something else here?')""" > route1/theRealTreasure.py
 
 printf """
 print('Clue: my password is the same as the name of the SHELL environment variable')

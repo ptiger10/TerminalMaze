@@ -1,4 +1,12 @@
 # TerminalMaze
 Finding your way around the Command Line 
 
-To activate the maze: $ . start_here.sh
+* Turn on your sound
+* Open Terminal application <br>
+* Type the following commands: <br>
+```
+cd Desktop
+git clone https://github.com/ptiger10/TerminalMaze.git
+cd TerminalMaze
+. start_here.sh
+``` 

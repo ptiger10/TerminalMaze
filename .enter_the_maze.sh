@@ -167,6 +167,10 @@ cd ~/theMaze
 for i in `seq 1 30`;
     do
         mkdir -p ~/theMaze/route$i
+        printf """
+from random import randint
+print('There is nothing for you here. Only more maze')
+    """ > ~/theMaze/route$i/.theRealRealTreasure.py
     done   
 
 printf """
@@ -201,6 +205,7 @@ while condition == False:
 
 printf """
 import webbrowser
+print('You have found the true treasure! Eternal glory is yours')
 webbrowser.open('https://www.youtube.com/watch?v=4fW3tX-UinQ')""" > route28/.theRealRealTreasure.py
 
 

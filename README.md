@@ -10,3 +10,5 @@ git clone https://github.com/ptiger10/TerminalMaze.git
 cd TerminalMaze
 . start_here.sh
 ``` 
+
+* Enter if you dare

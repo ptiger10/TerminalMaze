@@ -8,6 +8,7 @@ Finding your way around the Command Line
 cd Desktop
 git clone https://github.com/ptiger10/TerminalMaze.git
 cd TerminalMaze
+bash (if you are not using a Bash shell)
 . start_here.sh
 ``` 
 
